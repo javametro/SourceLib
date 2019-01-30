@@ -1,3 +1,7 @@
+include <algorithm>
+include <stack>
+using namespace std;
+
 template<typename T>
 class CQueue{
 	public:
@@ -32,9 +36,9 @@ class CQueue{
 			return s1.size() + s2.size();
 		}
 
-private:
-	stack<T> s1;
-	stack<T> s2;
+	private:
+		stack<T> s1;
+		stack<T> s2;
 }
 
 void CQueueTest(){

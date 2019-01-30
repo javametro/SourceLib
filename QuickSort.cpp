@@ -13,7 +13,7 @@ void Qsort(int a[], int low, int high){
 	while(first < last){
 		while(first < last && a[last] >= key) --last;
 		a[first] = a[last];
-		while(first < last && a[first] <= key) ++ first;
+		while(first < last && a[first] <= key) ++first;
 		a[last] = a[first];
 	}
 
